@@ -4,7 +4,9 @@ layout: default
 
 <div class="home">
 
-Testing : {{site.github.url}}
+<p>site.github.url = {{site.github.url}}</p>
+<p>site.baseurl = {{site.baseurl}}</p>
+<p>site.url = {{site.url}}</p>
 
   <h1 class="page-heading">Posts</h1>
 
@@ -14,7 +16,7 @@ Testing : {{site.github.url}}
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.github.url }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl  }}">{{ post.title }}</a>
         </h2>
       </li>
     {% endfor %}
